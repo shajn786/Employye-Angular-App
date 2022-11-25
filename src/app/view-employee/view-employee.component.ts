@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ViewEmployeeComponent {
 
-  name ="shajan"
-  designation= "Trainee"
-  salary =25000
-  emailid ="shajn786@Gmail.com"
-  companyname ="Nest Digital"
+ data ={
+  "name" :"shajan",
+  "designation":"Trainee",
+  "Salary":25000,
+  "companyname":"nest"
+ }
 
 }
