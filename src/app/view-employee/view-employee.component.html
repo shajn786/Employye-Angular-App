@@ -2,11 +2,7 @@
 <app-navbar></app-navbar>
 
 
-<h1>Welcome {{data.name}}</h1>
-<p>Salary {{data.Salary}}</p>
-<p>company name {{data.companyname}}</p>
-<p>Designation {{data.designation}}</p>
-<!-- <div class="container mt-4">
+<div class="container mt-4">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
@@ -18,34 +14,21 @@
                 <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">Employee id</th>
-                        <th scope="col">Employee Name</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Designation</th>
-                        <th scope="col">Phone Number</th>
+                        <th scope="col">Salary</th>
+                        <th scope="col">Company name</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <th scope="row">121</th>
-                        <td>Mark</td>
-                        <td>Trainee</td>
-                        <td>7854698745</td>
+                      <tr *ngFor="let i of data">
+                        <td>{{i.name}}</td>
+                        <td>{{i.designation}}</td>
+                        <td>{{i.Salary}}</td>
+                        <td>{{i.companyname}}</td>
                         
                       </tr>
-                      <tr>
-                        <th scope="row">123</th>
-                        <td>Jacob</td>
-                        <td>Trainee</td>
-                        <td>785545566222</td>
-                        
-                      </tr>
-                      <tr>
-                        <th scope="row">124</th>
-                        <td >Anirudh Varkey</td>
-                        <td>Trainee</td>
-                        <td>7854785694</td>
-                       
-                      </tr>
+                     
                     </tbody>
                   </table>
             </div>
@@ -54,4 +37,4 @@
 
         </div>
     </div>
-</div> -->
+</div>
