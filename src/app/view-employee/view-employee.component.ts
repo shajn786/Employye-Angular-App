@@ -45,7 +45,7 @@ export class ViewEmployeeComponent {
     "companyname":"infosys"
    },
    {
-    "name" :"karunu",
+    "name" :"karuna",
     "designation":"Senior engineer",
     "Salary":15000,
     "companyname":"increso"
