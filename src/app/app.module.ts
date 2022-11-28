@@ -11,6 +11,7 @@ import { EditEmployeeComponent } from './edit-employee/edit-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
+import { FormsModule } from '@angular/forms';
 
 const myRoutes : Routes= [
   {path:"",component:AdminLoginComponent},
@@ -37,7 +38,8 @@ const myRoutes : Routes= [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
